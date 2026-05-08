@@ -1,0 +1,49 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.roles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.role {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.role.selected {
+  border: 2px solid dodgerblue;
+  box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+  transform: translateY(-5px);
+}
